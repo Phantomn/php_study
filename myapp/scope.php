@@ -11,6 +11,8 @@ $color = "red";
 function echoColor(){
     global $color;
     echo $color;
+
+    echo 'hell';
 }
 echoColor();
 ?>
