@@ -104,7 +104,7 @@ if($result){
         $result = mysqli_query($conn, $sql);
         mysqli_close($conn);
 
-        $certify_href = 'http://localhost/myapp/ch15/email_certify.php?&amp;mb_id='.$mb_id.'&amp;mb_md5='.$mb_md5;
+        $certify_href = 'http://localhost/php_study/myapp/ch15/email_certify.php?&amp;mb_id='.$mb_id.'&amp;mb_md5='.$mb_md5;
 
         $subject = '인증확인 메일입니다.';
 

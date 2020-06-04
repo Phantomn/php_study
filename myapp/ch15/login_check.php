@@ -30,7 +30,7 @@ if($mb['mb_email_certify'] == '0000-00-00 00:00:00'){
     $mb_md5 = md5(pack('V*',rand(), rand(), rand(), rand()));
     $sql = "UPDATE member SET mb_email_certify2 = '$mb_md5' where mb_id = '$mb_id'";
     $result = mysqli_query($conn, $sql);
-    $certify_href = 'http://localhost/myapp/ch15/email_certify.php?&amp;mb_id='.$mb_id.'&amp;mb_md5='.$mb_md5;
+    $certify_href = 'http://localhost/php_study/myapp/ch15/email_certify.php?&amp;mb_id='.$mb_id.'&amp;mb_md5='.$mb_md5;
 
     $subject = '인증확인 메일입니다.';
 
